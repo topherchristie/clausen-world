@@ -1,0 +1,6 @@
+{"ts":1341339136667,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1341339184633,"patch":[[{"diffs":[[1,"<html>\n<head>\n<title>CLAUSEN WORLD is now virus free.</title>\n</head>\n<body>\n  <img src=\"/public/brian.jpg\" />\n</body>\n</html>"]],"start1":0,"start2":0,"length1":0,"length2":126}]],"length":126,"saved":false}
+{"ts":1341339299334,"patch":[[{"diffs":[[0,"/title>\n"],[1,"<style type=\"text/css\">\n img {margin:auto};\n</style>\n"],[0,"</head>\n"]],"start1":54,"start2":54,"length1":16,"length2":69}]],"length":179,"saved":false}
+{"ts":1341339314764,"patch":[[{"diffs":[[0,":auto};\n"],[1," body {text-align:center;}\n"],[0,"</style>"]],"start1":98,"start2":98,"length1":16,"length2":43}]],"length":206,"saved":false}
+{"ts":1341339424189,"patch":[[{"diffs":[[0,":center;"],[1,"backgound-img:url(/public/sherbert-plaid.gif)"],[0,"}\n</styl"]],"start1":123,"start2":123,"length1":16,"length2":61}]],"length":251,"saved":false}
+{"ts":1341339452021,"patch":[[{"diffs":[[0,"gound-im"],[-1,"g"],[1,"age"],[0,":url(/pu"]],"start1":135,"start2":135,"length1":17,"length2":19}]],"length":253,"saved":false}
