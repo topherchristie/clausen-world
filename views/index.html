@@ -1,25 +1,81 @@
 <html>
 <head>
 <title>CLAUSEN WORLD is now virus free.</title>
+<link rel="stylesheet" type="text/css" href="/public/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/public/css/bootstrap-responsive.css" />
+<script src="http://static.scripting.com/github/bootstrap2/js/jquery.js"></script>
+    <script src="/public/js/bootstrap-transition.js"></script>
+    <script src="/public/js/bootstrap-alert.js"></script>
+    <script src="/public/js/bootstrap-modal.js"></script>
+    <script src="/public/js/bootstrap-dropdown.js"></script>
+    <script src="/public/js/bootstrap-scrollspy.js"></script>
+    <script src="/public/js/bootstrap-tab.js"></script>
+    <script src="/public/js/bootstrap-tooltip.js"></script>
+    <script src="/public/js/bootstrap-popover.js"></script>
+    <script src="/public/js/bootstrap-button.js"></script>
+    <script src="/public/js/bootstrap-collapse.js"></script>
+    <script src="/public/js/bootstrap-carousel.js"></script>
+    <script src="/public/js/bootstrap-typeahead.js"></script>
 <style type="text/css">
- img {vertical-align:middle;display:block;
+/* img {vertical-align:middle;display:block;
 margin: auto;
 margin-right: auto;border:solid red 10px;}
  body {}
  div#content {height:100%;}
  div#title {width:80%;border:solid black 1px;margin: auto;opacity:0.5;background-color:white}
-
+*/
  body { background-image:url('/public/sherbet-plaid.gif');}
- div#title h1 {color:red;font-size:60px;opacity:1}
+ /*div#title h1 {color:red;font-size:60px;opacity:1}
+ */
+ div#comments{background-color:white;}
+ div#comments label {color:blue;font-weight:bold}
 </style>
+<script type="text/javascript" language="javascript">
+    $(document).ready(function(){
+        console.log("ready");
+        $("#commentDialog").bind("show",function(){
+            
+          //      document.getElementById("name").value = "";
+            //    document.getElementById("comment").value = "";
+        });
+    });
+    function closeDialog(){
+        $("#commentDialog").modal('hide');
+    }
+    function saveDialog(){
+        closeDialog();
+    }
+</script>
 </head>
 <body>
-
-<div id="content">
-  <div id="title"><marquee><blink><h1>Cats are Pretty!</h1></blink></marquee></div>
-  <img src="/public/brian.jpg" />
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span8">    
+        <div id="title"><marquee><blink><h1>Cats are Pretty!</h1></blink></marquee></div>
+        <img src="/public/brian.jpg" width="100%" />
+      </div>
+      <div class="span4" id="comments">
+    
+            <div class="divButtom"><a data-toggle="modal" href="#commentDialog" class="btn btn-primary btn-small">add comment</a></div>
+            <ul>
+                <li><label>Chris</label><span>For the record Brian has permission to edit the contents of this site, but not the ability.</span></li>
+            </ul>
+                
+      </div>
+    </div>
   </div>
-  
-
+  <div class="modal hide fade" id="commentDialog">
+    <div class="modal-header">Add your comment</div>
+    <div class="modal-body">
+       <!-- <label>Your Name</label><input type="text" name="name" value="" id="name" /><br />
+        <label>Comment</label><input type="text" name="comment" maxlength="100" value="" id="comment" /><br />
+        -->
+        <h4>Sorry, I am not currently accepting comments, please check back soon.</h4>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn btn-primary" onclick="saveDialog()">Save</a>
+        <a href="#" class="btn" onclick="closeDialog();">Cancel</a>
+    </div>
+  </div>
 </body>
 </html>
