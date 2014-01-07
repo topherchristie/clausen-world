@@ -17,7 +17,6 @@ app.configure(function(){
 
 
 app.get('/', function(req,res){
-	//res.send('hello brian, this worked');
     res.render("index");
 });
 
